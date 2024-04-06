@@ -1,12 +1,11 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.input-task {
+    height: 3em;
+    border: 1px solid black;
+    font-size: 2em;
+}
+.fa-xmark {
+    visibility: hidden;
+}
+.input-task:hover .fa-xmark {
+    visibility: visible; /* Muestra el icono cuando se pasa el ratón por encima del elemento li */
+}
