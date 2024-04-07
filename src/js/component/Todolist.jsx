@@ -36,12 +36,20 @@ const Todolist = () => {
                             {tasks.map((task,index) =>
                             <>       
                                 <li key={index} className="d-flex align-items-center">
-                                <div className="lines-task"></div>
-                                {task}
-                                <i onClick={()=>deleteTask(index)} className="fa-solid fa-xmark btn fs-2"></i>
+                                    <div className="lines-task"></div>
+                                    {task}
+                                    <i onClick={()=>deleteTask(index)} className="fa-solid fa-xmark btn fs-2"></i>
                                 </li>
                             </>
                             )}
+                            <li className="d-flex align-items-center items">
+                                <div className="lines-item"></div>
+                                {tasks.length === 1 ? `${tasks.length} item left` : `${tasks.length} items left`}
+                            </li>
+                        </ul>
+                        <ul className="ul-secondary list">
+                        <li id="second-paper"></li>
+                        <li id="third-paper"></li>
                         </ul>
                     </div>
                 </div>

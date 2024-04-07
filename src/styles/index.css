@@ -11,6 +11,7 @@ h1 {
     width: 900px;
     text-indent: 2.5em;
     font-weight: bold;
+    box-shadow: inset 0px -8px 0px 0px;
 }
 .main-wrapper {
     margin: 7em auto;
@@ -30,6 +31,7 @@ h1 {
     width: 900px;
     font-family: courier, monospace;
     border: 1px solid #dedede;
+    margin-bottom: 0;
 }
 .list li {
     font-size: 1em;
@@ -94,4 +96,34 @@ h1 {
     margin-right: 0;
     position: relative;
     bottom: -48px;
+}
+.items {
+    font-size: 20px !important;
+    z-index: 2;
+}
+.lines-item {
+    border-left: 1px solid #ffaa9f;
+    border-right: 1px solid #ffaa9f;
+    width: 11px;
+    height: 62px;
+    margin-left: 55px;
+    margin-right: 0;
+}
+.ul-secondary {
+    border: 0px;
+    z-index: 1;
+}
+#second-paper {
+    width: 98%; 
+    margin: auto;
+    height: 1px;
+    padding: 3px;
+    opacity: 0.9;
+}
+#third-paper {
+    width: 96%; 
+    margin: auto;
+    height: 1px;
+    padding: 3px;
+    opacity: 0.85;
 }
