@@ -1,11 +1,97 @@
-.input-task {
-    height: 3em;
-    border: 1px solid black;
-    font-size: 2em;
+body {
+    background-image: url("../img/wood-texture.jpeg");    
+    background-size: cover;
+    background-repeat: repeat;
+}
+h1 {
+    font-family: "Kaushan script";
+    font-size: 75px;
+    background-color: #faf3df;
+    margin-bottom: 0;
+    width: 900px;
+    text-indent: 2.5em;
+    font-weight: bold;
+}
+.main-wrapper {
+    margin: 7em auto;
 }
 .fa-xmark {
     visibility: hidden;
+    margin-left: auto;
+    color: rosybrown;
 }
-.input-task:hover .fa-xmark {
+.list li:hover .fa-xmark {
     visibility: visible; /* Muestra el icono cuando se pasa el ratón por encima del elemento li */
+}
+.list {
+    color: #555;
+    font-size: 2em;
+    padding-left: 0;
+    width: 900px;
+    font-family: courier, monospace;
+    border: 1px solid #dedede;
+}
+.list li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 1.7em;
+    height: 3em;
+    padding: 10px;
+    background-color: #faf3df;
+    font-weight: bold;
+}
+.list li:hover {
+    background-color: #f0f0f0;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -ms-transition:     all 0.2s;
+    -o-transition:      all 0.2s;
+}
+
+.lines-task {
+    border-left: 1px solid #ffaa9f;
+    border-right: 1px solid #ffaa9f;
+    width: 11px;
+    height: 96px;
+    margin-left: 55px;
+    margin-right: 0;
+}
+.input-task {
+    list-style: none;
+    text-indent: 3.5em;
+    height: 3em;
+    background-color: #faf3df;
+}
+.input-no-tasks::placeholder {
+    font-weight: bold;
+}
+.ul-title {
+    background-color: #faf3df;
+    color: #555;
+    font-size: 2em;
+    padding-left: 0;
+    height: 96px;
+    width: 900px;
+    border: 1px solid #dedede;
+    margin-bottom: 0;
+}
+.ul-title li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    height: 3em;
+    padding: 10px;
+    background-color: #faf3df;
+    font-weight: bold;
+}
+.lines-title {
+    border-left: 1px solid #ffaa9f;
+    border-right: 1px solid #ffaa9f;
+    width: 12px;
+    height: 194px;
+    margin-left: 55px;
+    margin-right: 0;
+    position: relative;
+    bottom: -48px;
 }
