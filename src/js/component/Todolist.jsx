@@ -29,13 +29,14 @@ const Todolist = () => {
                             <h1>TO DO LIST</h1>
                             </li>    
                         </ul>
-                        {tasks.length === 0 ? <input type="text" onChange={(e)=>setNewTask(e.target.value)} onKeyDown={addTask} value={newTask} className="list ps-3 input-no-tasks input-task" placeholder="No tasks, add your tasks here"/> 
+                        {tasks.length === 0 ? 
+                        <input type="text" onChange={(e)=>setNewTask(e.target.value)} onKeyDown={addTask} value={newTask} className="list ps-3 input-no-tasks input-task" maxlength="34" placeholder="No tasks, add your tasks (MAX 34 chars)"/> 
                         : 
-                        <input type="text" onChange={(e)=>setNewTask(e.target.value)} onKeyDown={addTask} value={newTask} className="list ps-3 input-task" placeholder="Add your new task"/>}
+                        <input type="text" onChange={(e)=>setNewTask(e.target.value)} onKeyDown={addTask} value={newTask} className="list ps-3 input-task" maxlength="34" placeholder="Add your next task (MAX 34 chars)"/>}
                         <ul className="list">
                             {tasks.map((task,index) =>
                             <>       
-                                <li key={index} className="d-flex align-items-center">
+                                <li key={index} className="d-flex align-items-center list-task">
                                     <div className="lines-task"></div>
                                     {task}
                                     <i onClick={()=>deleteTask(index)} className="fa-solid fa-xmark btn fs-2"></i>
