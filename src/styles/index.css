@@ -75,10 +75,6 @@ h1 {
 }
 .list-task:hover {
     background-color: #f0f0f0;
-    -webkit-transition: all 0.2s;
-    -moz-transition:    all 0.2s;
-    -ms-transition:     all 0.2s;
-    -o-transition:      all 0.2s;
 }
 .lines-task {
     border-left: 1px solid #ffaa9f;
